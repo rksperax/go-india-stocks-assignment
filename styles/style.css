@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(244, 244, 244);
+  overflow-x: hidden;
+}
+
+.tra {
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 570px) {
+  .mobileHide {
+    display: none;
+  }
+}
+
+header {
+  background: white;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+header nav .logoSearch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  header nav .logoSearch {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+header nav .logoSearch .logoLink img {
+  width: 80px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 500px) {
+  header nav .logoSearch .logoLink img {
+    width: 60px;
+  }
+}
+header nav .logoSearch .searchBox {
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 600px;
+  padding: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px gray inset;
+  background: rgb(226, 226, 226);
+}
+@media screen and (max-width: 1100px) {
+  header nav .logoSearch .searchBox {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 990px) {
+  header nav .logoSearch .searchBox {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav .logoSearch .searchBox {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header nav .logoSearch .searchBox {
+    width: 180px;
+  }
+}
+header nav .logoSearch .searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background: transparent;
+}
+@media screen and (max-width: 450px) {
+  header nav .logoSearch .searchBox input {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header nav .logoSearch .searchBox input {
+    width: 50px;
+  }
+}
+header nav .logoSearch .searchBox button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+header nav .loginSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+header nav .loginSec .navLink {
+  font-size: 14px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+@media screen and (max-width: 770px) {
+  header nav .loginSec .navLink {
+    display: none;
+  }
+}
+header nav .loginSec .navLink.bor {
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(128, 128, 128, 0.699);
+  text-transform: uppercase;
+}
+header nav .loginSec .userLink {
+  display: none;
+}
+@media screen and (max-width: 770px) {
+  header nav .loginSec .userLink {
+    display: block;
+  }
+}
+header nav .loginSec .userLink img {
+  width: 30px;
+  border-radius: 50%;
+}
+header .bottomNav {
+  background: rgb(23, 30, 39);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  overflow-x: scroll;
+  padding: 5px 10px 5px 20px;
+}
+header .bottomNav::-webkit-scrollbar {
+  display: none;
+}
+header .bottomNav .elem {
+  color: white;
+  font-size: 13px;
+  line-height: 22px;
+}
+header .bottomNav .elem.red {
+  color: rgb(248, 80, 80);
+}
+header .bottomNav .elem.green {
+  color: rgb(60, 187, 60);
+}
+header .plusBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1d3b61;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  z-index: 10;
+}
+@media screen and (max-width: 570px) {
+  header .plusBtn {
+    height: 40px;
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+.featuredComMain .heading {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(248, 80, 80);
+  padding: 5px 20px;
+}
+@media screen and (max-width: 570px) {
+  .featuredComMain .heading {
+    font-size: 16px;
+    padding: 4px 12px;
+  }
+}
+.featuredComMain .companies {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgb(231, 240, 251);
+  overflow-x: scroll;
+}
+.featuredComMain .companies::-webkit-scrollbar {
+  display: none;
+}
+.featuredComMain .companies img {
+  width: 100px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mobileTabs {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 570px) {
+  .mobileTabs {
+    display: flex;
+  }
+}
+.mobileTabs .left {
+  text-align: center;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: #1d3b61;
+  flex: 1;
+  border-bottom: 3px solid #1d3b61;
+  transition: all 0.3s;
+}
+.mobileTabs .left.active {
+  border-bottom: 3px solid rgb(194, 66, 66);
+}
+.mobileTabs .right {
+  transition: all 0.3s;
+  text-align: center;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: #1d3b61;
+  flex: 1;
+  border-bottom: 3px solid #1d3b61;
+}
+.mobileTabs .right.active {
+  border-bottom: 3px solid rgb(194, 66, 66);
+}
+
+.sidebarMain {
+  background: #1d3b61;
+  width: 300px;
+  position: fixed;
+  z-index: 10;
+  left: 0px;
+  top: 200px;
+  bottom: 0px;
+  transform: translateX(0%);
+  transition: all 0.4s;
+}
+@media screen and (max-width: 1100px) {
+  .sidebarMain {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .sidebarMain {
+    top: 104px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebarMain {
+    top: 90px;
+  }
+}
+.sidebarMain.closed {
+  transform: translateX(-100%);
+}
+.sidebarMain .userNotify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(176, 189, 206, 0.6901960784);
+}
+.sidebarMain .userNotify .userBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.sidebarMain .userNotify .userBox .text {
+  color: white;
+  font-size: 14px;
+}
+.sidebarMain .navItems {
+  padding-top: 10px;
+}
+.sidebarMain .navItems .item {
+  padding: 5px 10px;
+  position: relative;
+}
+.sidebarMain .navItems .item.itemDrp {
+  background: #132842;
+}
+.sidebarMain .navItems .item:hover {
+  background: #132842;
+}
+.sidebarMain .navItems .item .text {
+  padding-left: 25px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sidebarMain .navItems .item .text::-moz-selection {
+  background: transparent;
+}
+.sidebarMain .navItems .item .text::selection {
+  background: transparent;
+}
+.sidebarMain .navItems .item .triIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.sidebarMain .navItems .item .itemIcon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.sidebarMain .navItems .item .subNav {
+  overflow-y: hidden;
+  height: 0px;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.sidebarMain .navItems .item .subNav .opt {
+  color: rgb(228, 228, 228);
+  font-size: 14px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.sidebarMain .navItems .item .subNav.open {
+  opacity: 1;
+  height: auto;
+}
+.sidebarMain .sideBarToggler {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d3b61;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.fourmSectionMain {
+  padding-left: 300px;
+  overflow-x: hidden;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 1100px) {
+  .fourmSectionMain {
+    padding-left: 250px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fourmSectionMain {
+    padding-left: 0px;
+  }
+}
+.fourmSectionMain.expanded {
+  padding-left: 0px;
+}
+.fourmSectionMain .discussionMain {
+  padding: 15px 5px 0px;
+}
+.fourmSectionMain .discussionMain .heading {
+  color: rgb(248, 80, 80);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 570px) {
+  .fourmSectionMain .discussionMain .heading {
+    font-size: 16px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec {
+  padding: 0px 40px 0px 50px;
+}
+@media screen and (max-width: 1200px) {
+  .fourmSectionMain .discussionMain .filtersSec {
+    padding: 0px 30px 0px 30px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .fourmSectionMain .discussionMain .filtersSec {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .filterHead {
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec {
+  padding: 15px;
+  box-shadow: 0px 2px 3px rgb(145, 145, 145);
+  border-radius: 5px;
+  background: white;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .secItem {
+  background: rgb(175, 39, 30);
+  border-radius: 50px;
+  padding: 3px 10px;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .secItem.blue {
+  background: rgb(35, 89, 162);
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .secItem.yellow {
+  background: rgb(236, 202, 91);
+}
+@media screen and (max-width: 770px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .secItem {
+    font-size: 10px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .sBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3px 6px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 3px gray inset;
+  background: rgb(226, 226, 226);
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+  width: 160px;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+    width: 70px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input {
+    width: 50px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::-moz-placeholder {
+  font-size: 14px;
+  text-align: center;
+}
+.fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::placeholder {
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .fourmSectionMain .discussionMain .filtersSec .searchSec .sBox input::placeholder {
+    font-size: 12px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .posts {
+  margin-top: 20px;
+  height: calc(100vh - 375px);
+  overflow-y: scroll;
+  /* Handle */
+  /* Handle on hover */
+}
+@media screen and (max-width: 570px) {
+  .fourmSectionMain .discussionMain .filtersSec .posts {
+    height: calc(100vh - 410px);
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .posts::-webkit-scrollbar {
+  width: 10px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 10px;
+  box-shadow: 0px 0px 2px rgb(145, 145, 145);
+}
+.fourmSectionMain .discussionMain .filtersSec .posts::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0px 2px 3px rgb(145, 145, 145);
+  margin: 2px 2px 10px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .imgBox {
+  text-align: center;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content {
+  padding-left: 60px;
+  padding-right: 60px;
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .posts .post .content {
+    padding-right: 10px;
+    padding-left: 50px;
+  }
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span {
+  background: rgb(175, 39, 30);
+  border-radius: 40px;
+  font-size: 12px;
+  color: white;
+  padding: 2px 8px;
+  margin-left: 20px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span.blue {
+  background: rgb(35, 89, 162);
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .name span.yellow {
+  background: rgb(236, 202, 91);
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .desc {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .likeShare {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .likeShare .like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .likeShare .like .text {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.fourmSectionMain .discussionMain .filtersSec .posts .post .content .userImg {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  width: 30px;
+}
+@media screen and (max-width: 500px) {
+  .fourmSectionMain .discussionMain .filtersSec .posts .post .content .userImg {
+    left: 10px;
+  }
+}
+.fourmSectionMain .storiesSec {
+  padding: 15px 5px 0px;
+}
+.fourmSectionMain .storiesSec .heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(248, 80, 80);
+  font-weight: 500;
+}
+@media screen and (max-width: 570px) {
+  .fourmSectionMain .storiesSec .heading {
+    font-size: 16px;
+  }
+}
+.fourmSectionMain .storiesSec .marketCards {
+  height: calc(100vh - 300px);
+  overflow-y: scroll;
+  margin-top: 35px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 770px) {
+  .fourmSectionMain .storiesSec .marketCards {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .fourmSectionMain .storiesSec .marketCards {
+    height: calc(100vh - 320px);
+  }
+}
+.fourmSectionMain .storiesSec .marketCards::-webkit-scrollbar {
+  display: none;
+}
+.fourmSectionMain .storiesSec .marketCards .marketCard {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.fourmSectionMain .storiesSec .marketCards .marketCard .over {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.486);
+  color: white;
+  font-size: 14px;
+  padding: 20px 20px 15px;
+}
+@media screen and (max-width: 770px) {
+  .fourmSectionMain .storiesSec .marketCards .marketCard .over {
+    padding: 10px 10px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
